@@ -1,0 +1,52 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-space t": "terminal_panel::ToggleFocus",
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown"
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "space q": "pane::CloseActiveItem",
+      "space w": "workspace::Save",
+      "ctrl-t l": "pane::ActivateNextItem",
+      "ctrl-t h": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-space s": "pane::SplitDown",
+      "ctrl-space v": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space r": "editor::FindAllReferences",
+      "space a w": "editor::ToggleCodeActions",
+      "space d": "editor::GoToDefinition",
+      "space D": "editor::GoToDeclaration",
+      "space r n": "editor::Rename"
+    }
+  }
+]
