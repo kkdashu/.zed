@@ -9,17 +9,22 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-space t": "terminal_panel::ToggleFocus",
-      "ctrl-w h": "workspace::ActivatePaneLeft",
-      "ctrl-w l": "workspace::ActivatePaneRight",
-      "ctrl-w k": "workspace::ActivatePaneUp",
-      "ctrl-w j": "workspace::ActivatePaneDown"
       // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-space h": "workspace::ActivatePaneLeft",
+      "ctrl-space l": "workspace::ActivatePaneRight",
+      "ctrl-space k": "workspace::ActivatePaneUp",
+      "ctrl-space j": "workspace::ActivatePaneDown"
     }
   },
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-space l": "terminal_panel::ToggleFocus",
       "space q": "pane::CloseActiveItem",
       "space w": "workspace::Save",
       "ctrl-t l": "pane::ActivateNextItem",
